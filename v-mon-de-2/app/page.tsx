@@ -4,6 +4,7 @@ import { LeftSidebar } from '@/components/left-sidebar'
 import { MapView } from '@/components/map-view'
 import { RightSidebar } from '@/components/right-sidebar'
 import { useEffect, useState } from 'react'
+import { Navbar } from '@/components/navbar'
 
 interface VehicleData {
   id: string
@@ -54,13 +55,23 @@ export default function DashboardPage() {
   ])
 
   return (
-    <div className="flex h-screen bg-background">
-      <LeftSidebar vehicles={vehicles} />
-      <main className="flex-1 p-4">
-        <MapView vehicles={vehicles} />
-      </main>
-      <RightSidebar alerts={alerts} />
+    <div className="flex flex-col h-screen bg-background">
+      {/* Navbar at the top */}
+      <Navbar links={[{ name: 'Home', href: '/' }]} title="Vehicle Dashboard" />
+
+      {/* Main content area */}
+      <div className="flex flex-1">
+        {/* Left sidebar */}
+        <LeftSidebar vehicles={vehicles} />
+        
+        {/* Main map view */}
+        <main className="flex-1 p-4">
+          <MapView vehicles={vehicles} />
+        </main>
+        
+        {/* Right sidebar */}
+        <RightSidebar alerts={alerts} />
+      </div>
     </div>
   )
 }
-
