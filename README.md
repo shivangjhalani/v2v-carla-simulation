@@ -1,5 +1,5 @@
 
-# NoBrainCellsLeft: 24 hour Hackathon project for CodeRed25 conducted by BMSIT, Bangalore
+# NoBrainCellsLeft: Winning project for CodeRed25 National Level Hackathon conducted by BMSIT, Bangalore
 
 ## Problem statement
 Develop a real-time IoT system enabling vehicles to exchange critical data such as location, speed, and road conditions to enhance road safety and optimize traffic flow. The system should alert vehicles to sudden stops, road hazards, or traffic changes, reducing accidents and supporting autonomous or semi-autonomous driving. This technology is vital for smart cities, fostering efficient and coordinated urban transportation networks
